@@ -1,18 +1,36 @@
+/* default text is lucida grande font with a sans-serif as a fallback option */
 body  {
     font-family: "Lucida Grande", sans-serif;
 }
-
+/* header 1 is 64px, centered */
 h1  {
     font-size: 64px;
     text-align: center;
 }
-
+/* header 2 is 30px, with grey (#808080) drop shadow that is offset 5px horizontally, 5px vertically, and 2px blur */
 h2  {
     font-size: 30px;
     text-shadow: 5px 5px 2px #808080; 
 }
-
+/* paragraphs use 24px font and have 20px padding on the top only */
 p  {
     font-size: 24px;
     padding-top: 20px;
 }
+/* all text is white on a black background (use hexadecimal values)*/
+
+/* images match the following styles:
+all images are on their own line
+all images are centered
+all images are 525px wide with proper aspect ratio (they are not warped or stretched) */
+
+/* all divs must be at least 150px tall (but will not automatically be taller if needed) with 25px padding on all sides */
+
+div  {
+    height: 150px;
+    padding-top: 25px; 
+    padding-right: 25px; 
+    padding-bottom: 25px; 
+    padding-left: 25px;
+}
+
