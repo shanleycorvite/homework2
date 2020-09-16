@@ -1,6 +1,9 @@
 /* default text is lucida grande font with a sans-serif as a fallback option */
+/* all text is white on a black background (use hexadecimal values)*/
 body  {
     font-family: "Lucida Grande", sans-serif;
+    background: #000000;
+    color: #ffffff;
 }
 /* header 1 is 64px, centered */
 h1  {
@@ -17,20 +20,52 @@ p  {
     font-size: 24px;
     padding-top: 20px;
 }
-/* all text is white on a black background (use hexadecimal values)*/
 
 /* images match the following styles:
 all images are on their own line
 all images are centered
 all images are 525px wide with proper aspect ratio (they are not warped or stretched) */
 
+img  {
+    width: 525px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
 /* all divs must be at least 150px tall (but will not automatically be taller if needed) with 25px padding on all sides */
 
 div  {
-    height: 150px;
-    padding-top: 25px; 
-    padding-right: 25px; 
-    padding-bottom: 25px; 
-    padding-left: 25px;
+    min-height: 150px;
+    padding: 25px;
 }
 
+#red  {
+    background: #ff0000;
+    text-align: right;
+}
+
+#blue  {
+    background: #0000ff;
+    text-align: left;
+}
+
+#yellow  {
+    background: #ffff00;
+    text-align: right;
+    color: #000000;  
+}
+#yellow h2 {
+    text-shadow: 5px 5px 2px #c7e2c7;  
+}
+
+#green {
+    background: #008000;
+    text-align: left;
+}
+
+footer {
+    text-align: right;
+    padding-bottom: 10px;
+    padding-right: 10px; 
+}
